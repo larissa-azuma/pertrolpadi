@@ -65,17 +65,17 @@ function Companies() {
     return (
         <div className='py-16 bg-color-bg text-black'>
             <div className='container'>
-                {/* Header section */}
+                
                 <div className='mb-10 space-y-5'>
-                    <h1 className='text-center text-4xl font-bold sm:max-w-sm mx-auto'>Trusted by Some Amazing Companies</h1>
+                    <h1 className='text-center font-bold sm:max-w-sm mx-auto'>Trusted by Some Amazing Companies</h1>
                 </div>
-                {/* Slider section */}
+                
                 <div>
                     <Slider {...settings}>
                         {CompaniesData.map((menu) => (
                             <div className='my-16' key={menu.id}>
                                 <div className='flex flex-col gap-4 py-8 px-6 mx-4 rounded-xl'>
-                                    {/* Image section */}
+                                    
                                     <div className='mb-3 flex justify-between'>
                                         <img src={menu.image} alt='' className='rounded-full w-auto sm:max-w-[200px] md:max-w-[250px] shadow-1' />
                                     </div>
