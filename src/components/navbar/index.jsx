@@ -2,11 +2,13 @@ import React from 'react'
 import petrolpadi from "../../assests/image/petrolpadi.png"
 import { FaBars } from 'react-icons/fa6'
 
+
 const Menu =[
   {
     id:1,
     name:"Why PetrolPadi?",
-    link:"/why-petrolpadi"
+    link:"/why-petrolpadi ",
+    
   },
   {
     id:2,
@@ -28,8 +30,8 @@ function Navbar()  {
   };
   
   return (
-    <nav className= 'container py-2 bg-color-bg'>
-        
+    <nav className= 'sticky top-0 z-50 py-3py-2  backdrop-blur-lg bg-color-bg border-b border-neutral'>
+        <div className=' container px-4 mx-auto relative lg:text-sm'>
           <div className='flex justify-between items-center'>
             <div>
             <a href ='/logo'>
@@ -55,7 +57,7 @@ function Navbar()  {
             {/* Dropdown Menu */}
               {open && (
                   <div>
-                    <ul className='bg-color-bg space -y-3 p-4 rounded-md shadow-md absolute right-10 top-24 z-50'>
+                    <ul className='bg-white space -y-3 p-4 rounded-md shadow-md absolute right-10 top-24 z-50'>
                       {Menu.map((menu)=>(
                         <li key={menu.id}>
                           <a href={menu.link} className='inline-block text-xl p-4 
@@ -68,7 +70,8 @@ function Navbar()  {
                 )
               }
            </div>
-          </div>    
+          </div> 
+          </div>   
     </nav>
   )
 }
