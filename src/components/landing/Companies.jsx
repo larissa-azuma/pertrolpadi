@@ -77,7 +77,7 @@ function Companies() {
                                 <div className='flex flex-col gap-4 py-8 px-6 mx-4 rounded-xl'>
                                     
                                     <div className='mb-3 flex justify-between'>
-                                        <img src={menu.image} alt='' className='rounded-full w-auto sm:max-w-[200px] md:max-w-[250px] shadow-1' />
+                                        <img src={menu.image} alt='' className='square-full w-auto sm:max-w-[200px] md:max-w-[250px] shadow-1' />
                                     </div>
                                 </div>
                             </div>

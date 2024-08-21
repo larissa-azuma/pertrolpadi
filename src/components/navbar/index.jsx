@@ -30,7 +30,7 @@ function Navbar()  {
   };
   
   return (
-    <nav className= 'sticky top-0 z-50 py-3py-2  backdrop-blur-lg bg-color-bg border-b border-neutral'>
+    <nav className= 'sticky top-0 z-50 py-3py-2  backdrop-blur-lg bg-white border-b border-neutral'>
         <div className=' container px-4 mx-auto relative lg:text-sm'>
           <div className='flex justify-between items-center'>
             <div>
