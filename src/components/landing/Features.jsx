@@ -8,7 +8,10 @@ import newsred from "../../assests/image/newsred.png";
 // import news4 from '../../assests/image/news4.png'
 import Secondc from "../../assests/image/Secondc.png";
 import Gas from "../../assests/image/Gas.png";
-import tanktruck from "../../assests/image/tanktruck.png"
+import tanktruck from "../../assests/image/tanktruck.png";
+import Thirdc from "../../assests/image/Thirdc.png";
+import google from "../../assests/image/google.png";
+import apple1 from "../../assests/image/apple1.png"
 
 function Features() {
   return (
@@ -28,7 +31,7 @@ function Features() {
             </p>
 
             <div className="text-center  space-x-4">
-              <img src={newsred} alt="" className="w-12 h-12 " />
+              <img src={newsred} alt="" className="w-12 h-12  sm:max-w-sm mx-auto" />
               <h1 className="text-lg font-medium text-black text-center ">
                 Latest Development in the Fuel Industry
               </h1>
@@ -73,7 +76,7 @@ function Features() {
               Nigeria
             </p>
             <div className="text-center  space-x-4">
-              <img src={Gas} alt="" className="w-12 h-12 " />
+              <img src={Gas} alt="" className="w-12 h-12 sm:max-w-sm mx-auto" />
               <h2 className="text-lg font-medium text-black text-center ">
                 Detailed Insights Into Fuel Prices
               </h2>
@@ -94,17 +97,54 @@ function Features() {
         </h1>
         <p className="text-center text-sm">Place,track and manage your orders and payments easily with our intuitive order management features</p>
         <div className="text-center  space-x-4">
-        <img src={tanktruck} alt="" className="w-12 h-12 " />
+        <img src={tanktruck} alt="" className="w-12 h-12 sm:max-w-sm mx-auto" />
         <h2 className="text-center font-bold text-black  "> Effortless Ordering Process</h2>
         <p className="text-center text-sm ">Easily order petrol,diesel and gas with just few clicks,thanks to our hassle free and efficient process that saves you time and effort.</p><br/>
         <div className="text-center space-x-4">
-        <img src={tanktruck} alt="" className="w-12 h-12 " />
+        <img src={tanktruck} alt="" className="w-12 h-12 sm:max-w-sm mx-auto" />
         <h2 className="text-center font-bold text-black  "> Track Your Orders & Payments Instantly</h2>
         <p className="text-center text-sm ">Track your orders in-real time from placement to delivery,keeping you informed at every step and ensuring you know the status and expected delivery.</p>
         </div>
         </div>
         </div>
           </div>
+          <div className="flex justify-center items-center">
+          <img
+              src={Thirdc}
+              alt=""
+              className="max-w-[420px] w-full mx-auto"
+            /> 
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-4">
+          <button className="bg-black text-white px-4 py-2 rounded">
+          <img src={google}  alt="Google" className='h-5 w-5'/>
+            <a href="/Download">Download on GooglePlay</a>
+          </button>
+          <button className="bg-black text-white px-4 py-2 rounded">
+          <img src={apple1}  alt="Apple" className='h-5 w-5'/>
+            <a href="/Download">Download now on App Store</a>
+          </button>
+        </div>
+        </div>
+
+        <div className=" flex flex-col justify-center gap-8 sm:pt-0">
+        <h1 className="text-center text-xl font-bold sm:max-w-sm mx-auto">
+          We have depot listing from different zones
+        </h1>
+        </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-4">
+          <button className="bg-slate-50 text-black px-4 py-2 rounded">
+            <a href="/Download">Lagos</a>
+          </button>
+          <button className="bg-slate-50 text-black px-4 py-2 rounded">
+            <a href="/Download">Warri</a>
+          </button>
+          <button className="bg-slate-50 text-black px-4 py-2 rounded">
+            <a href="/Download">Calabar</a>
+          </button>
+          <button className="bg-slate-50 text-blackpx-4 py-2 rounded">
+            <a href="/Download">Port Harcourt</a>
+          </button>
         </div>
       </div>
     </div>
